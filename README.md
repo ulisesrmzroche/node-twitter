@@ -34,7 +34,13 @@ The convenience APIs aren't finished, but you can get started with the basics:
 		console.log(util.inspect(data));
 	});
 
+	/// Get a Users Timeline
+	twit.get('/statuses/user_timeline.json', { screen_name: user.twitter_screenname }, function(data) {
+		console.log(util.inspect(data));
+	});
+
 ### REST API (unstable, may change)
+
 
 Note that all functions may be chained:
 
